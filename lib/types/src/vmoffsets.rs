@@ -383,7 +383,7 @@ impl VMOffsets {
 impl VMOffsets {
     /// Return the size of `VMSharedSignatureIndex`.
     pub const fn size_of_vmshared_signature_index(&self) -> u8 {
-        4
+        8
     }
 }
 

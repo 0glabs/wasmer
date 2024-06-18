@@ -775,7 +775,7 @@ impl VMGlobalDefinition {
 
 /// An index into the shared signature registry, usable for checking signatures
 /// at indirect calls.
-#[repr(C)]
+#[repr(C, align(8))]
 #[derive(Debug, Eq, PartialEq, Clone, Copy, Hash, MemoryUsage)]
 pub struct VMSharedSignatureIndex(u32);
 
